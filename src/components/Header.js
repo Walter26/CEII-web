@@ -8,11 +8,10 @@ class Header extends React.Component{
             <div className="container header">
                 <nav className="navbar navbar-expand">
                     <div className="banner">                    
-                        <img className="banner img" src={logo} alt="Logo CEII"></img>
                         <h1>Comunidad Estudiantil de <br/> Ingeniería Informática</h1>
+                        <img className="banner img" src={logo} alt="Logo CEII"></img>
                     </div>
                     <div className="buttons">
-                        <button className="btn btn-primary">Inicio</button>
                         <button className="btn btn-primary">Acerca de</button>
                         <button className="btn btn-primary">Noticias</button>
                         <button className="btn btn-primary">Contáctanos</button>
