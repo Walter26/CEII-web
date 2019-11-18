@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import BigHero from "./BigHero";
-import Contact from "./Contact";
+import Footer from "./Footer";
 
 class Body extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Body extends React.Component {
       <div>
         <Header />
         <BigHero />
-        <Contact />
+        <Footer />
       </div>
     );
   }
