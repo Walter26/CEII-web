@@ -20,8 +20,8 @@ class BigHero extends React.Component {
             </p>
           </div>
           <img className="article-img" src={everyone} alt="About us"></img>
-          <hr/>
         </article>
+        <hr/>
         <article className="mision">
         <div className="article-details">
           <h2>Nuestra misión</h2>
@@ -31,9 +31,9 @@ class BigHero extends React.Component {
             desarrollo integral de todos los participantes.
           </p>
         </div>
-          <img src={preu} alt="Mision"></img>
-          <hr/>
+          <img className="article-img" src={preu} alt="Mision"></img>
         </article>
+        <hr/>
         <article className="vision">
         <div className="article-details">
           <h2>Nuestra visión</h2>
@@ -43,9 +43,9 @@ class BigHero extends React.Component {
             todos sus allegados.
           </p>
         </div>
-          <img src={vision} alt="Vision"></img>
-          <hr/>
+          <img className="article-img" src={vision} alt="Vision"></img>
         </article>
+          <hr/>
       </section>
     );
   }

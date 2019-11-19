@@ -15,24 +15,26 @@
 .banner{
     display: flex;
     flex-flow: row-reverse nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 35vw;
+    width: 30%;
+    margin-left: 20px;
 }
 
 .banner h1{
     margin: 5px;
     padding-top: 40px;
+    width: 75%;
 }
 
 .banner .img{
     margin: 10px;
-    height: 15vh;
-    width: auto;
+    width: 23%;
+    height: auto;
 }
 
 .buttons{
-    width: 65vw;
+    width: 70%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -40,11 +42,12 @@
 }
 
 .buttons .nav-anchor{
-    width:calc(100% / 5);
+    width:calc((100% - 1em) / 5);
     text-decoration: none;
     border-left: solid white 1px;
     padding: 40px;
     text-align: center;
+    font-size: 1.3em;
 }
 
 .nav-anchor:hover{
