@@ -1,8 +1,8 @@
 import React from "react";
-import everyone from '../img/Everyone.jpg';
-import preu from '../img/Preu.JPG';
-import vision from '../img/Vision.jpg';
-import css_bighero from '../styles/css_bighero.css';
+import everyone from '../../img/Everyone.jpg';
+import preu from '../../img/Preu.JPG';
+import vision from '../../img/Vision.jpg';
+import css_bighero from '../../styles/css_bighero.css';
 
 class BigHero extends React.Component {
   render() {

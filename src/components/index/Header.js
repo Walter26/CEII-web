@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from '../img/Logo_flat.png';
-import css_navbar from '../styles/css_navbar.css';
+import logo from '../../img/Logo_flat.png';
+import css_navbar from '../../styles/css_navbar.css';
 
 class Header extends React.Component{
     render() {
