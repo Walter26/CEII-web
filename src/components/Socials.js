@@ -11,15 +11,15 @@ class Socials extends React.Component{
                 <div className="socials">
                     <div className="fb">
                         <img src={fb} alt="Facebook"></img>
-                        <h4>Facebook</h4>
+                        <a href="https://www.facebook.com/CEII.UCA/"><i>Facebook</i></a>
                     </div>
                     <div className="insta">
                         <img src={insta} alt="Instagram"></img>
-                        <h4>Instagram</h4>
+                        <a href="https://www.instagram.com/ceii.uca/?hl=es"><i>Instagram</i></a>
                     </div>
                     <div className="slack">
                         <img src={slack} alt="Slack"></img>
-                        <h4>Slack</h4>
+                        <a href="https://join.slack.com/t/ceiiuca/shared_invite/enQtODMxNzgwOTA4NDgxLWZjMWRiZWZhNTYzOTViNDQ2ZTM0ZWNlZDU2NDJlMTVjOTI1MjM2MGYzYzY4ODZhNjY0MjgyMWQ3NDdkNThiMmY"><i>Slack</i></a>
                     </div>
                 </div>
             </div>

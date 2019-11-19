@@ -12,11 +12,11 @@ class Header extends React.Component{
                         <img className="banner img" src={logo} alt="Logo CEII"></img>
                     </div>
                     <div className="buttons">
-                        <button className="btn btn-primary">Acerca de</button>
-                        <button className="btn btn-primary">Noticias</button>
-                        <button className="btn btn-primary">Contáctanos</button>
-                        <button className="btn btn-primary">Inicia sesión</button>
-                        <button className="btn btn-primary">Regístrate</button>
+                        <a href="" className="nav-anchor">Acerca de</a>
+                        <a href="" className="nav-anchor">Noticias</a>
+                        <a href="" className="nav-anchor">Contáctanos</a>
+                        <a href="" className="nav-anchor">Inicia sesión</a>
+                        <a href="" className="nav-anchor">Regístrate</a>
                     </div>
                 </nav>
             </div>
