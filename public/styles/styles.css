@@ -6,6 +6,10 @@
     background-color: transparent;
 }
 
+*, *::before, *::after{
+    color: white;
+}
+
 body{
     background-image: url('./Back.jpg');
     background-color: black;

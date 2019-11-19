@@ -1,0 +1,17 @@
+.general-info{
+    display: flex;
+    flex-direction: row;
+}
+
+.general-info .article-details{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 50vw;
+}
+
+.article-img{
+    max-width: 400px;
+    max-height: 400px;
+}  
+
+

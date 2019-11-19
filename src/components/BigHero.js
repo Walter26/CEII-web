@@ -19,7 +19,7 @@ class BigHero extends React.Component {
               convivencia.
             </p>
           </div>
-          <img src={everyone} alt="About us"></img>
+          <img className="article-img" src={everyone} alt="About us"></img>
           <hr/>
         </article>
         <article className="mision">
