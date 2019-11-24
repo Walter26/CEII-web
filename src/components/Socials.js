@@ -1,7 +1,7 @@
 import React from 'react';
-import fb from '../../img/fb.png';
-import insta from '../../img/insta.png';
-import slack from '../../img/slack.png';
+import fb from '../img/fb.png';
+import insta from '../img/insta.png';
+import slack from '../img/slack.png';
 
 class Socials extends React.Component{
     render() {
