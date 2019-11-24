@@ -45,6 +45,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-left: 1px solid rgba(255,255,255,0.2);
+    border-right: 1px solid (255,255,255,0.2);
     width: calc(100% / 6);
 }
 
@@ -66,8 +68,13 @@ a{
     margin: 10px;
 }
 
+.navBar h1{
+    font-size: 2em;
+}
+
 .navBar h2{
     font-weight: 400;
+    font-size: 1.2em;
 }
 
 .navBar br{
@@ -81,6 +88,7 @@ a{
 
 .container{
     position: relative;
+    top: 100px;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -174,6 +182,7 @@ div.box.b5{
 
 .box:hover .content img{
     top: -140px;
+    opacity: 0.5;
 }
 
 .box .content h3{
@@ -198,4 +207,64 @@ div.box.b5{
     height: 100%;
     background: rgba(255,255,255,0.05);
     pointer-events: none;
+}
+
+.footer{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    margin: 15px 0px 0px 0px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    
+}
+
+.footer ul li a{
+    position: relative;
+    width: 33%;
+}
+
+.footer img{
+    width: 40px;   
+    transition: 0.5s;
+    opacity: 0.2;
+}
+
+.footer img:hover{
+    top: -10px;
+    width: 50px;
+    opacity: 0.5;
+}
+
+.footer h2{
+    width: 33%;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.footer .socials{
+    width: 33%;
+}
+
+.footer .flat{
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.footer .copy{
+    font-weight: 400;
+    font-size: 1.2em;
+    align-self: flex-end;
+    width: 33%;
+    margin: 4px;
 }

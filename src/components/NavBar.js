@@ -30,8 +30,8 @@ class NavBar extends React.Component{
                 </div>
                 <Link to="/">Inicio</Link>
                 <Link to="/committee">Comités</Link>
-                <Link>Noticias</Link>
-                <Link>Contáctanos</Link>
+                <Link to="/news">Noticias</Link>
+                <Link to="/contact">Contáctanos</Link>
                 {this.isLoged()}
             </nav>
         );
