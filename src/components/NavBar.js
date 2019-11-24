@@ -28,8 +28,8 @@ class NavBar extends React.Component{
                         <h2>Comunidad Estudiantil de <br/> Ingeniería Informática</h2>
                     </div>
                 </div>
-                <Link>Inicio</Link>
-                <Link>Comités</Link>
+                <Link to="/">Inicio</Link>
+                <Link to="/committee">Comités</Link>
                 <Link>Noticias</Link>
                 <Link>Contáctanos</Link>
                 {this.isLoged()}

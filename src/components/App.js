@@ -21,7 +21,7 @@ var App = () => {
         <BrowserRouter>
             <Layout>
             <Switch>
-                <Route exact path="/" 
+                <Route exact path="/committee" 
                     render = {(props) =>
                     <Committee {...props} comName={sendProps.comName} comDesc={sendProps.comDesc}/>
                 }>
