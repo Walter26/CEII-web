@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 body{
@@ -15,11 +16,66 @@ body{
     align-items: center;
 }
 
+a{
+    text-decoration: none;
+}
+
 #root{
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 100vh;
+}
+
+.navBar{
+    display: flex;
+    height: 10vh;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navBar a{
+    height: inherit;
+    transition: 0.5s;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: calc(100% / 6);
+}
+
+.navBar a:hover{
+    background: rgba(255,255,255,0.2);
+    font-weight: 700;
+    font-size: 150%;
+}
+
+.navBar .logo-container{
+    justify-self: flex-start;
+    height: 90%;
+    width: 35vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.navBar .logo-container .typo{
+    margin: 10px;
+}
+
+.navBar h2{
+    font-weight: 400;
+}
+
+.navBar br{
+    width: 100%;
+}
+
+.navBar img{
+    height: 100%;
+    margin: 10px;
 }
 
 .container{

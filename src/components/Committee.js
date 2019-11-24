@@ -5,7 +5,6 @@ import academic from '../img/as.png';
 import regulator from '../img/reg.png';
 import relations from '../img/rp.png';
 
-
 class Committee extends React.Component{
     render() {
         return(
