@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import Main from '../components/Main';
+import Home from './Home';
 import Committee from './Committee';
 import Layout from './Layout';
 
@@ -26,7 +26,7 @@ var App = () => {
                     <Committee {...props} comName={sendProps.comName} comDesc={sendProps.comDesc}/>
                 }>
                 </Route>
-                <Route></Route>
+                <Route exact path="/" component={Home}></Route>
                 <Route></Route>
             </Switch>
             </Layout>
