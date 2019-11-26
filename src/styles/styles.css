@@ -200,7 +200,7 @@ a{
     text-align: center;
     justify-self: flex-end;
     bottom: 0;
-    margin: 15px 0px 0px 0px;
+    margin: 15px 0px 10px 0px;
     width: 100vw;
     height: 12vh;
     display: flex;
@@ -255,7 +255,7 @@ a{
     font-size: 1.2em;
     align-self: flex-end;
     width: 33%;
-    margin: 4px;
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -389,5 +389,87 @@ a{
 }
 
 @media only screen and (max-width: 375px) {
+    .navBar a{
+        display: none;
+    }
+
+    .navBar .logo-container{
+        justify-self: center;
+        align-items: center;
+        height: 70%;
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .navBar h1{
+        font-size: 1em;
+    }
     
+    .navBar h2{
+        font-weight: 300;
+        font-size: 0.7em;
+    }
+    
+    .navBar img{
+        height: 80%;
+        margin: 10px;
+    }   
+
+    .container{
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    
+    .container img{
+        max-width: 80px;
+    }
+
+    .container .box{
+        position: relative;
+        margin: 50px;
+        height: 400px;  
+        width: 100%;
+        background: #060C21;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #000;
+    }
+    
+    .box .content h3{
+        margin: 0 0 10px;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    
+    .box .content p{
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    .footer img{
+        width: 20px;   
+        opacity: 0.2;
+    }
+    
+    .footer h2{
+        width: 30%;
+        font-weight: 400;
+        font-size: 0.8em;
+    }
+    
+    .footer .copy{
+        font-weight: 400;
+        font-size: 0.7em;
+        width: 25%;
+        margin: 6px;
+    }
 }
