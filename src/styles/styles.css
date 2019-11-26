@@ -292,6 +292,33 @@ a{
 }
 
 @media only screen and (max-width: 768px) {
+
+    .navBar a{
+        font-size: 0.75em;
+    }
+
+    .navBar .logo-container{
+        justify-self: flex-start;
+        height: 80%;
+        width: 60vw;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    
+    .navBar h1{
+        font-size: 1.3em;
+    }
+    
+    .navBar h2{
+        font-weight: 400;
+        font-size: 0.9em;
+    }
+    
+    .navBar img{
+        height: 80%;
+        margin: 10px;
+    }   
+
     .container{
         width: 100%;
         display: flex;
@@ -307,7 +334,7 @@ a{
     
     .container .box{
         position: relative;
-        margin: 10px;
+        margin: 30px;
         height: 400px;  
         width: calc((100% - 2em)/3);
         background: #060C21;
@@ -318,18 +345,47 @@ a{
         border: 1px solid #000;
     }
     
-    .container .box:before{
-        content: '';
-        position: absolute;
-        top: -2px;
-        left: -2px;
-        right: -2px;
-        bottom: -2px;
-        background: white;
-        transform: skew(2deg, 2deg);
-        z-index: -1;
+    .footer{
+        position: fixed;
+        text-align: center;
+        justify-self: flex-end;
+        margin: 0px 0px -30px 0px;
+        width: 100vw;
+        height: 13vh;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
     }
     
+    
+    .footer ul li a{
+        position: relative;
+        width: 40%;
+    }
+    
+    .footer img{
+        width: 30px;   
+        opacity: 0.2;
+    }
+    
+    .footer h2{
+        width: 33%;
+        font-weight: 400;
+        font-size: 1.1em;
+    }
+    
+    .footer .socials{
+        width: 30%;
+    }
+    
+    .footer .copy{
+        font-weight: 400;
+        font-size: 1em;
+        align-self: flex-end;
+        width: 25%;
+        margin: 4px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
