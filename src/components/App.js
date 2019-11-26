@@ -4,6 +4,7 @@ import {BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import Committee from './Committee';
 import Layout from './Layout';
+import Login from './Login';
 
 let sendProps = {
     comName: ["Académico Social", "Marketing", "Regulador", "Relaciones públicas", "Técnico"],
@@ -27,7 +28,7 @@ var App = () => {
                 }>
                 </Route>
                 <Route exact path="/" component={Home}></Route>
-                <Route></Route>
+                <Route exact path="/login" component={Login}></Route>
             </Switch>
             </Layout>
         </BrowserRouter>

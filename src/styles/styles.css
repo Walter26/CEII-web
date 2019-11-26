@@ -94,6 +94,7 @@ a{
 .container{
     width: 100%;
     max-height: calc(100% - 22vh);
+    min-height: calc(100% - 22vh);
     overflow: auto;
     display: flex;
     flex-flow: row wrap;
@@ -122,6 +123,7 @@ a{
 .container .box:before{
     content: '';
     position: absolute;
+    
     top: -2px;
     left: -2px;
     right: -2px;
@@ -256,6 +258,11 @@ a{
     align-self: flex-end;
     width: 33%;
     margin-bottom: 20px;
+}
+
+.box.log{
+    flex-flow: column nowrap;
+    height: ;
 }
 
 @media only screen and (max-width: 1024px){
