@@ -5,6 +5,7 @@ import Home from './Home';
 import Committee from './Committee';
 import Layout from './Layout';
 import Login from './Login';
+import Register from './Register';
 
 let sendProps = {
     comName: ["Académico Social", "Marketing", "Regulador", "Relaciones públicas", "Técnico"],
@@ -29,6 +30,7 @@ var App = () => {
                 </Route>
                 <Route exact path="/" component={Home}></Route>
                 <Route exact path="/login" component={Login}></Route>
+                <Route exact path="/register" component={Register}></Route>
             </Switch>
             </Layout>
         </BrowserRouter>

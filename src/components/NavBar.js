@@ -13,7 +13,7 @@ class NavBar extends React.Component{
             return(
                 <React.Fragment>
                     <Link to="/login">Inicia sesión</Link>
-                    <Link>Regístrate</Link>
+                    <Link to="/register">Regístrate</Link>
                 </React.Fragment>
             );
     }
