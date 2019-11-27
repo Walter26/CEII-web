@@ -295,6 +295,37 @@ a{
     padding: 40px;
 }
 
+.container.register .box.reg{
+    min-width: 800px;
+    min-height: 700px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.box.reg .pair{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 15px;
+    width: 95%;
+    height: 50px;
+}
+
+.box.reg label{
+    font-size: 1.5em;
+}
+
+.box.reg input{
+    width: 500px;
+}
+
+.box.reg p{
+    font-size: 1.1em;
+}
+
 @media only screen and (max-width: 1024px){
     
     .navBar .logo-container{
