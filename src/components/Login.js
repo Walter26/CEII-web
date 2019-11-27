@@ -8,9 +8,6 @@ class Login extends React.Component{
             password: ''
         }
     }
-    constructor(props){
-        super(props);
-    }
     render() {
         return(
             <div className="container">

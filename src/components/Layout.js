@@ -28,9 +28,6 @@ class Layout extends React.Component {
             user: {}
         }
     }
-    constructor(props) {
-        super(props);
-    }
     handleUpdate = (newUser) => {
         this.setState({
             userData: newUser

@@ -99,9 +99,9 @@ class Register extends React.Component{
 
         if(!pass.value)
             passError.style.opacity = 0;
-        else if(pass.value != passConfirm.value)
+        else if(pass.value !== passConfirm.value)
             passError.style.opacity = 1;
-        else if(pass.value == passConfirm.value && pass.value != ''){
+        else if(pass.value === passConfirm.value && pass.value !== ''){
             this.setState({
                 passState: "Las contraseñas coinciden"
             })

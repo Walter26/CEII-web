@@ -24,13 +24,13 @@ class Welcome extends React.Component{
         );
     }
     genderRendering(){
-        if(this.props.usrSend.userData.gender == 'F')
+        if(this.props.usrSend.userData.gender === 'F')
             return woman;
         else
             return man;
     }
     nameRendering(){
-        if(this.props.usrSend.userData.gender == 'F')
+        if(this.props.usrSend.userData.gender === 'F')
             return "Bienvenida " + this.props.usrSend.userData.usrname;
         else
             return "Bienvenido " + this.props.usrSend.userData.usrname;
