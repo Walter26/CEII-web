@@ -4,7 +4,7 @@ import Welcome from './Welcome';
 class Main extends React.Component{
     render(){
         return(
-           <Welcome usrSend={this.props.usr}/>
+           <Welcome gender="M" usrname="Walter"/>
         );
     }
 }
