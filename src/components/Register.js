@@ -10,7 +10,7 @@ class Register extends React.Component{
             fullname: '',
             password: ''
         },
-        logedIn: false
+        passState: 'Las contraseñas no coinciden'
     };
     
     render(){
@@ -52,8 +52,9 @@ class Register extends React.Component{
                     <div className="pair">
                         <label htmlFor="cPassword">Confirmar contraseña</label>
                         <input type="password" name="cPassword" id="cPassword"/>
+                        <p id="pass_error" className="pass_error">{this.state.passState}</p>
                     </div>
-                    <button type="submit" name="submit" id="submit" className="reg button">Registrarse</button>
+                    <button type="submit" name="submit" id="submit" className="reg button" disabled>Registrarse</button>
                 </form>
             </div>
         );
@@ -62,6 +63,10 @@ class Register extends React.Component{
     handleSubmit = (e) => {
         e.preventDefault();
         let data = this.state.user;
+
+        if(!data.usrname || !data.email || !data.phone || !data.fullname || !data.pass)
+            return alert('No pueden haber campos vacios');
+
         return fetch('http://localhost:3500/user', {
             method: 'POST',
             body: JSON.stringify(data),
@@ -69,8 +74,14 @@ class Register extends React.Component{
                 'Content-Type': 'application/json',
             }
         }).then(res => {
-            if(res.status === 200)
-                this.setState({logedIn: true})
+            if(res.status === 200){
+                let newUser = {
+                    isLoged: true,
+                    user: data
+                }
+                this.props.handleUpdate(newUser);
+                this.props.history.push("/main");
+            }
         }).catch(err => err);
     }
 
@@ -81,7 +92,22 @@ class Register extends React.Component{
                 [e.target.name]: e.target.value,
             }
         })
-        console.log(this.state)
+        let pass = document.getElementById("password");
+        let passConfirm = document.getElementById("cPassword");
+        let passError = document.getElementById("pass_error");
+        let enableBtn = document.getElementById("submit");
+
+        if(!pass.value)
+            passError.style.opacity = 0;
+        else if(pass.value != passConfirm.value)
+            passError.style.opacity = 1;
+        else if(pass.value == passConfirm.value && pass.value != ''){
+            this.setState({
+                passState: "Las contraseñas coinciden"
+            })
+            passError.style.color = "green";
+            enableBtn.disabled = false;
+        }
     }
 }
 

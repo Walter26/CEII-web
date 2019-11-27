@@ -3,7 +3,7 @@ import React from 'react';
 class Contact extends React.Component{
     render(){
         return(
-            <div class="container">
+            <div className="container">
                 <form className="box contact">
                     <div className="pair">
                         <label htmlFor="name">Nombre</label>

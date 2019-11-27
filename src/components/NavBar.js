@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import logo from '../img/ceii.png'
 
 class NavBar extends React.Component{
-    isLoged(){
+    logedIn(){
         if(this.props.isLoged)
             return(
-                <Link>Tu perfil</Link>
+                <Link to="/main">Tu perfil</Link>
             );
         else
             return(
@@ -31,7 +31,7 @@ class NavBar extends React.Component{
                 <Link to="/">Inicio</Link>
                 <Link to="/committee">Comités</Link>
                 <Link to="/contact">Contáctanos</Link>
-                {this.isLoged()}
+                {this.logedIn()}
             </nav>
         );
     }
