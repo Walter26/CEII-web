@@ -36,9 +36,6 @@ class Layout extends React.Component {
             userData: newUser
         })
     }
-    layoutIsLoged(){
-
-    }
     render() {
         return(
             <React.Fragment>
@@ -61,7 +58,7 @@ class Layout extends React.Component {
                         <Route exact path="/contact" component={Contact}/>
                         <Route exat path="/main"
                             render = {(props) =>
-                            <Main {...props} genderRender={this.state.userData.gender} usrName={this.state.userData.usrname}/>} 
+                            <Main {...props} usr={this.state.userData}/>} 
                         />
                     </Switch>
                 <Footer/>            
