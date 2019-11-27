@@ -260,9 +260,39 @@ a{
     margin-bottom: 20px;
 }
 
-.box.log{
+.container .box.log{
+    display: flex;
     flex-flow: column nowrap;
-    height: ;
+    min-height:450px;
+    width: 50%;
+}
+
+.container .pair{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 15px;
+    width: 95%;
+    height: 50px;
+}
+
+.container label{
+    font-size: 2.2em;
+}
+
+.container input{
+    width: 410px;
+    height: 30px;
+}
+
+.container .credentials{
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
 
 @media only screen and (max-width: 1024px){
@@ -296,6 +326,41 @@ a{
         height: 90%;
         margin: 10px;
     }    
+
+    .container .box.log{
+        display: flex;
+        flex-flow: column nowrap;
+        min-height: 500px;
+        width: 70%;
+    }
+    
+    .container .pair{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: space-between;
+        padding: 15px;
+        width: 80%;
+        height: 50px;
+    }
+    
+    .container label{
+        font-size: 1.8em;
+    }
+    
+    .container input{
+        width: 390px;
+        height: 30px;
+    }
+    
+    .container .credentials{
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 1.5em;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -393,6 +458,41 @@ a{
         width: 25%;
         margin: 4px;
     }
+
+    .container .box.log{
+        display: flex;
+        flex-flow: column nowrap;
+        min-height: 500px;
+        width: 90%;
+    }
+    
+    .container .pair{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: space-between;
+        padding: 15px;
+        width: 80%;
+        height: 50px;
+    }
+    
+    .container label{
+        font-size: 1.7em;
+    }
+    
+    .container input{
+        width: 390px;
+        height: 20px;
+    }
+    
+    .container .credentials{
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 1.5em;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
 }
 
 @media only screen and (max-width: 375px) {
@@ -478,5 +578,40 @@ a{
         font-size: 0.7em;
         width: 25%;
         margin: 6px;
+    }
+
+    .container .box.log{
+        display: flex;
+        flex-flow: column nowrap;
+        min-height: 500px;
+        width: 80%;
+    }
+    
+    .container .pair{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: space-between;
+        padding: 25px;
+        width: 80%;
+        height: 50px;
+    }
+    
+    .container label{
+        font-size: 1.3em;
+    }
+    
+    .container input{
+        width: 240px;
+        height: 20px;
+    }
+    
+    .container .credentials{
+        display: flex;
+        flex-flow: column nowrap;
+        font-size: 1.3em;
+        justify-content: center;
+        align-items: center;
+        padding: inherit;
     }
 }
