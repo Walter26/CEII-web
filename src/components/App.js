@@ -6,6 +6,7 @@ import Committee from './Committee';
 import Layout from './Layout';
 import Login from './Login';
 import Register from './Register';
+import Contact from './Contact';
 
 let sendProps = {
     comName: ["Académico Social", "Marketing", "Regulador", "Relaciones públicas", "Técnico"],
@@ -19,19 +20,34 @@ let sendProps = {
 }
 
 var App = () => {
+    var state = {
+        logedIn: false,
+        user: {
+            email: '',
+            usrname: '',
+            phone: '',
+            gender: '',
+            fullname: '',
+            password: ''
+        }
+    }
     return(
         <BrowserRouter>
             <Layout>
-            <Switch>
-                <Route exact path="/committee" 
-                    render = {(props) =>
-                    <Committee {...props} comName={sendProps.comName} comDesc={sendProps.comDesc}/>
-                }>
-                </Route>
-                <Route exact path="/" component={Home}></Route>
-                <Route exact path="/login" component={Login}></Route>
-                <Route exact path="/register" component={Register}></Route>
-            </Switch>
+                <Switch>
+                    <Route exact path="/committee" 
+                        render = {(props) =>
+                        <Committee {...props} comName={sendProps.comName} comDesc={sendProps.comDesc}/>
+                    }>
+                    </Route>
+                    <Route exact path="/" component={Home}></Route>
+                    <Route exact path="/login" 
+                        render = {(props) => 
+                        <Login {...props}/>}
+                    />
+                    <Route exact path="/register" component={Register}></Route>
+                    <Route exact path="/contact" component={Contact}></Route>
+                </Switch>
             </Layout>
         </BrowserRouter>
     );

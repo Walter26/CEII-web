@@ -5,22 +5,25 @@ class Login extends React.Component{
     render() {
         return(
             <div className="container">
-                <div className="box log">
+                <form className="box log" onSubmit={this.handleSubmit}>
                     <div className="pair">
-                    <label htmlFor="usrname">Usuario:</label>
-                    <input type="text" name="usrname" id="usrname"/>
+                        <label htmlFor="usrname">Usuario</label>
+                        <input type="text" name="usrname" id="usrname"/>
                     </div>
                     <div className="pair">
-                    <label htmlFor="password">Contraseña:</label>
-                    <input type="password" name="password" id="password"/>
+                        <label htmlFor="password">Contraseña</label>
+                        <input type="password" name="password" id="password"/>
                     </div>
                     <div className="credentials">
-                        <Link>Entrar</Link> <br></br>
-                        <Link>¿Olvidaste tu contraseña?</Link>
+                        <button type="submit" name="submit" id="submit">Entrar</button>
+                        <Link to="/">¿Olvidaste tu contraseña?</Link>
                     </div>
-                </div>
+                </form>
             </div>
         );
+    }
+    handleSubmit(e){
+        
     }
 }
 

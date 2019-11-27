@@ -67,19 +67,17 @@ a{
     width: 35vw;
     display: flex;
     flex-flow: row nowrap;
-}
-
-.navBar .logo-container .typo{
-    margin: 10px;
+    justify-content: flex-start;
+    align-items: center;   
 }
 
 .navBar h1{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .navBar h2{
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .navBar br{
@@ -88,10 +86,12 @@ a{
 
 .navBar img{
     height: 100%;
-    margin: 10px;
+    margin: 0px 20px;
 }
 
 .container{
+    box-sizing: border-box;
+    padding: 20px;
     width: 100%;
     max-height: calc(100% - 22vh);
     min-height: calc(100% - 22vh);
@@ -198,13 +198,13 @@ a{
 }
 
 .footer{
+    box-sizing: border-box;
     position: fixed;
     text-align: center;
     justify-self: flex-end;
     bottom: 0;
-    margin: 15px 0px 10px 0px;
     width: 100vw;
-    height: 12vh;
+    height: 6vh;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -249,69 +249,121 @@ a{
 .footer .flat{
     width: 100%;
     font-size: 0.7em;
-    padding-top: 20px;
+    padding: 4px;
 }
 
-.footer .copy{
-    font-weight: 400;
-    font-size: 1.2em;
-    align-self: flex-end;
+.footer .footer-text{
     width: 33%;
-    margin-bottom: 20px;
-}
-
-.container .box.log{
     display: flex;
     flex-flow: column nowrap;
-    min-height:450px;
-    width: 50%;
-}
-
-.container .pair{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: space-between;
-    padding: 15px;
-    width: 95%;
-    height: 50px;
-}
-
-.container label{
-    font-size: 2.2em;
-}
-
-.container input{
-    width: 410px;
-    height: 30px;
-}
-
-.container .credentials{
-    display: flex;
-    flex-flow: column nowrap;
-    font-size: 1.5em;
     justify-content: center;
     align-items: center;
-    padding: 40px;
 }
 
-.container.register .box.reg{
-    min-width: 800px;
-    min-height: 700px;
+.box.log{
+    flex-flow: column nowrap;
+    height: 70%;
+    width: 25%;
+    transition: 0.5s;
+}
+
+.box.reg{
+    flex-flow: column nowrap;
+}
+
+.box.log:hover{
+    height: 72%;
+    width: 27%;
+}
+
+.pair{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 95%;
+    height: 30%;
+}
+
+.pair label{
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 6px;
+    padding: 3px;
+}
+
+.pair input{
+    font-size: 1.2em;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    width: 80%;
+    height: 30%;
+    border-radius: 5px;
+    border: none;
+}
+
+.box.reg .pair input{
+    height: 50%;
+}
+
+.credentials{
+    height: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+.credentials a{
+    width: auto;
+    height: inherit;
+    margin: 3px;
+    padding: 5px;
+    transition: 0.5s;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.credentials a:hover{
+    font-weight: 700;
+    background: rgba(255,255,255,0.2);
+    height: 35%;
+    width: auto;
+}
+
+.box.reg{
+    width: 45%;
+    height: 90%;
+    transition: 0.5s;
+}
+
+.box.reg:hover{
+    width: 47%;
+    height: 92%;
+}
+
+.pair.selection{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .box.reg .pair{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: space-between;
-    padding: 15px;
+    margin: 5px;
     width: 95%;
-    height: 50px;
+    height: 11%;
+}
+
+.pair.selection .pair{
+    height: 100%;
+    max-width: 50%;
 }
 
 .box.reg label{
@@ -319,11 +371,103 @@ a{
 }
 
 .box.reg input{
-    width: 500px;
+    width: 50%;
+    height: auto;
+}
+
+.box.reg select{
+   color: #fff;
+   background-color: rgb(66,71,86);
+   border-radius: 5px;
+   padding-left: 15px;
+}
+
+.box.reg select option{
+    background: rgba(255,255,255,0.2);
+}
+
+.pair.selection .pair input{
+    width: 80%;
 }
 
 .box.reg p{
-    font-size: 1.1em;
+    font-size: 1em;
+}
+
+.credentials button{
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background: rgba(255,255,255,0);
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.credentials button:hover{
+    background: rgba(255,255,255,0.2);
+    font-weight: 700;
+}
+
+.reg.button,.contact button{
+    margin: 20px;
+    padding: 20px;
+    border: none;
+    background: rgba(255,255,255,0);
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+
+.reg.button:hover,.contact button:hover{
+    background: rgba(255,255,255,0.2);
+    font-weight: 700;
+}
+
+.about{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about.mission{
+    flex-flow: row-reverse nowrap;
+}
+
+.about img{
+    max-width: 40%;
+    margin: 0em 2em;
+}
+
+.about .home-details{
+    margin: 10px;
+    width: 40%;
+}
+
+.box.home-details{
+    text-align: justify;
+    box-sizing: border-box;
+    flex-flow: column nowrap;
+    padding: 40px;
+}
+
+.box.contact{
+    flex-flow: column nowrap;
+    height: 85%;
+    width: 30%;
+}
+
+.box.contact .pair{
+    height: 25%;
+}
+
+.pair textarea{
+    font-size: 1em;
+    text-align: center;
+    background: rgba(255,255,255,0.2);
+    width: 80%;
+    height: 60%;
+    border-radius: 5px;
+    border: none;
 }
 
 @media only screen and (max-width: 1024px){

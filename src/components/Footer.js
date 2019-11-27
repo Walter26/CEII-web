@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 
 import fb from '../img/fb.png';
 import insta from '../img/ins.png';
@@ -21,12 +20,14 @@ class Footer extends React.Component {
               <a href="https://www.instagram.com/ceii.uca/"><img src={insta} alt="Instagram"/></a>
             </li>
             <li>
-              <a href="https://join.slack.com/t/ceiiuca/shared_invite/enQtODMxNzgwOTA4NDgxLWZjMWRiZWZhNTYzOTViNDQ2ZTM0ZWNlZDU2NDJlMTVjOTI1MjM2MGYzYzY4ODZhNjY0MjgyMWQ3NDdkNThiMmY"><img src={slack} alt="Slack"/></a>
+              <a href="https://bit.ly/2QTJLqh"><img src={slack} alt="Slack"/></a>
             </li>
           </ul>
         </div>
-          <h3 className="copy">Copyright ©CEII {actualYear}, todos los derechos reservados</h3>
-          <div className="flat">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+          <div className="footer-text">
+            <h3 className="copy">Copyright ©CEII {actualYear}, todos los derechos reservados</h3>
+            <div className="flat">Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+          </div>
       </footer>
     )
   }

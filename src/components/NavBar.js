@@ -21,7 +21,7 @@ class NavBar extends React.Component{
         return(
             <nav className="navBar">
                 <div className="logo-container">
-                    <img src={logo}></img>
+                    <img src={logo} alt="Logo"></img>
                     <div className="typo">
                         <h1>CEII</h1>
                         <hr/>
