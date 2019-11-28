@@ -486,6 +486,62 @@ a{
     transition: 0.5s;
 }
 
+.container.main{
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.welcome{
+    position: relative;
+    display: flex;
+    height: 30vh;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 10px;
+}
+
+.welcome>img{
+    height: 75%;
+}
+
+.welcome>h1{
+    font-size: 3.5em;
+}
+
+.side-bar{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.side-bar a{
+    width: auto;
+    height: inherit;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.5s;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.2em;
+}
+
+.side-bar a:hover{
+    font-weight: 700;
+    background: rgba(255,255,255,0.2);
+    height: 35%;
+    width: auto;
+}
+    
+
+
 @media only screen and (max-width: 1024px){
     
     .navBar .logo-container{
