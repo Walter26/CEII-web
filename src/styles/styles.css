@@ -794,14 +794,8 @@ a{
     }
     
     .welcome{
-        position: relative;
-        display: flex;
         height: 20vh;
-        width: 100%;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-items: flex-start;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     
     .welcome>h1{
@@ -809,15 +803,6 @@ a{
     }
     
     .side-bar a{
-        width: auto;
-        height: inherit;
-        margin: 15px;
-        padding: 20px;
-        transition: 0.5s;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: center;
-        align-items: flex-start;
         font-size: 1.1em;
     }
 }
@@ -940,5 +925,30 @@ a{
         justify-content: center;
         align-items: center;
         padding: inherit;
+    }
+
+    .welcome{
+        height: 18vh;
+        width: 100%;
+        padding-bottom: 70px;
+    }
+    
+    .welcome>h1{
+        font-size: 2.5em;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .side-bar a{
+        width: auto;
+        height: inherit;
+        margin: 15px;
+        padding: 20px;
+        transition: 0.5s;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1em;
     }
 }
