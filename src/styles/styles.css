@@ -580,7 +580,7 @@ a{
 }
 
 .table-act td{
-    padding: 20px;
+    padding: 25px;
 }
 
     
@@ -974,6 +974,16 @@ a{
         align-items: flex-start;
         font-size: 1.2em;
     }
+
+    .side-container{
+        width: 100%;
+        padding-left: 15px;
+    }
+    
+    .side-container .table-act{
+        font-size: 1em;
+    }
+
 }
 
 @media only screen and (max-width: 375px) {
@@ -1160,6 +1170,10 @@ a{
         text-align: center;
         padding-top: 20px;
     }
+
+    .side-bar{
+        width:50%;
+    }
     
     .side-bar a{
         width: auto;
@@ -1172,5 +1186,14 @@ a{
         justify-content: center;
         align-items: flex-start;
         font-size: 1em;
+    }
+
+    .side-container{
+        width: 110%;
+        margin-left: -20px;
+    }
+    
+    .side-container .table-act{
+        font-size: 0.45em;
     }
 }
