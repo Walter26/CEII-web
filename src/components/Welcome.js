@@ -23,6 +23,7 @@ class Welcome extends React.Component{
                     <Link>Salir</Link>
                 </div>
                 <div className="side-container">
+                <h2>Actividades Proximas</h2>
                     <Activity/>
                 </div>
             </div>
