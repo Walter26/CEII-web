@@ -938,7 +938,7 @@ a{
 
 @media only screen and (max-width: 375px) {
     .navBar a{
-        display: none;
+        display: flex;
     }
 
     .navBar .logo-container{
@@ -1055,6 +1055,34 @@ a{
         align-items: center;
         padding: inherit;
     }
+
+    .about{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .about.mission{
+        flex-flow: column nowrap;
+    }
+    
+    .about img{
+        max-width: 95%;
+        margin: 0em 2em;
+    }
+    
+    .about .home-details{
+        margin: 40px;
+        width: 85%;
+    }
+    
+    .box.home-details{
+        text-align: justify;
+        box-sizing: border-box;
+        flex-flow: column nowrap;
+        padding: 20px;
+    }    
 
     .welcome{
         height: 18vh;
