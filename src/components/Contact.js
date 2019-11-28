@@ -4,7 +4,7 @@ class Contact extends React.Component{
     render(){
         return(
             <div className="container">
-                <form className="box contact">
+                <form className="box contact" action="mailto:wmorales@ceii.com.sv">
                     <div className="pair">
                         <label htmlFor="name">Nombre</label>
                         <input type="text"/>

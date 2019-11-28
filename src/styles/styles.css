@@ -289,7 +289,7 @@ a{
 .pair label{
     font-weight: 700;
     text-align: center;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin: 6px;
     padding: 3px;
 }
@@ -338,14 +338,16 @@ a{
 }
 
 .box.reg{
+    box-sizing: content-box;
+    padding: 30px 0px;
     width: 45%;
-    height: 90%;
+    height: 85%;
     transition: 0.5s;
 }
 
 .box.reg:hover{
     width: 47%;
-    height: 92%;
+    height: 87%;
 }
 
 .pair.selection{
@@ -364,10 +366,19 @@ a{
 .pair.selection .pair{
     height: 100%;
     max-width: 50%;
+    padding: 3px;
+}
+
+.pair.selection .pair label{
+    font-size: 1.1em;
+}
+
+#gender{
+    font-size: 1.2em;
 }
 
 .box.reg label{
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 .box.reg input{
@@ -376,7 +387,8 @@ a{
 }
 
 .box.reg select{
-   color: #fff;
+   height: 50%;
+    color: #fff;
    background-color: rgb(66,71,86);
    border-radius: 5px;
    padding-left: 15px;
