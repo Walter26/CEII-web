@@ -41,7 +41,7 @@ class Login extends React.Component{
     async handleSubmit(e){
         e.preventDefault();
         let data = this.state.user;
-        let url = 'http://localhost:3500/user/' + data.usrname;
+        let url = 'https://ceiiapi.herokuapp.com/user/' + data.usrname;
         let response = await fetch(url,{
             method: 'GET',  
             headers: {

@@ -262,7 +262,7 @@ a{
 
 .box.log{
     flex-flow: column nowrap;
-    height: 70%;
+    height: 80%;
     width: 25%;
     transition: 0.5s;
 }
@@ -412,7 +412,7 @@ a{
     margin: 20px;
     padding: 20px;
     border: none;
-    background: rgba(255,255,255,0);
+    background: rgba(112, 73, 73, 0);
     font-size: 1.2em;
     transition: 0.5s;
 }
@@ -487,28 +487,25 @@ a{
 }
 
 .container.main{
-    position: relative;
     display: flex;
     flex-flow: row wrap;
-    align-content: flex-start;
     justify-content: flex-start;
-    align-items: center;
-    padding: 30px;
+    align-items: flex-start;
+    padding: 10px;
 }
 
 .welcome{
-    position: relative;
     display: flex;
-    height: 25vh;
+    height: 20%;
     width: 100%;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: flex-start;
-    padding-bottom: 10px;
+    align-items: center;
+    margin: 10px 0px;
 }
 
-.welcome>img{
-    height: 75%;
+.welcome img{
+    width: 25%;
 }
 
 .welcome>h1{
@@ -518,13 +515,18 @@ a{
 .side-bar{
     display: flex;
     flex-flow: column nowrap;
+    height: 70%;
+    width: 15%;
+    overflow: hidden;
 }
 
 .side-bar a{
+    box-sizing: border-box;
     width: auto;
-    height: inherit;
-    margin: 15px;
-    padding: 20px;
+    height: 18%;
+    width: 100%;
+    margin: 5px;
+    padding: 3px;
     transition: 0.5s;
     display: flex;
     flex-flow: column nowrap;
@@ -536,8 +538,7 @@ a{
 .side-bar a:hover{
     font-weight: 700;
     background: rgba(255,255,255,0.2);
-    height: 35%;
-    width: auto;
+    height: 22%;
 }
     
 @media only screen and (max-width: 1024px){
@@ -590,7 +591,7 @@ a{
     }
     
     .container label{
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
     
     .container input{
@@ -607,20 +608,55 @@ a{
         padding: 40px;
     }
 
-    .container.main{
-        position: relative;
-        display: flex;
-        flex-flow: row wrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 30px;
+    .box.contact{
+        flex-flow: column nowrap;
+        height: 85%;
+        width: 50%;
+        transition: 0.5s;
     }
+
+    .pair textarea{
+        width: 100%;
+        height: 60%;
+    }
+
+    .box.reg{
+        width: 70%;
+        height: 90%;
+        transition: 0.5s;
+    }
+
+    .pair.selection .pair{
+        height: 100%;
+        max-width: 40%;
+    }
+    
+    .box.reg label{
+        font-size: 1.3em;
+    }
+    
+    .box.reg input{
+        width: 40%;
+        height: auto;
+    }
+    
+    .box.reg select option{
+        background: rgba(255,255,255,0.2);
+    }
+    
+    .pair.selection .pair input{
+        width: 70%;
+    }
+    
+    .box.reg p{
+        font-size: 0.9em;
+    }
+    
     
     .welcome{
         position: relative;
         display: flex;
-        height: 23vh;
+        height: 20vh;
         width: 100%;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -639,11 +675,12 @@ a{
         padding: 20px;
         transition: 0.5s;
         display: flex;
-        flex-flow: column nowrap;
+        flex-flow: row nowrap;
         justify-content: center;
         align-items: flex-start;
         font-size: 1.2em;
     }
+
     .side-bar a:hover{
         font-weight: 700;
         background: rgba(255,255,255,0.2);
@@ -794,16 +831,32 @@ a{
     }
     
     .welcome{
-        height: 20vh;
+        height: 15vh;
         padding-bottom: 20px;
     }
     
     .welcome>h1{
         font-size: 3em;
     }
+
+    .side-bar{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 70%;
+        width:30%;
+    }
     
     .side-bar a{
-        font-size: 1.1em;
+        width: auto;
+        height: inherit;
+        margin: 15px;
+        padding: 20px;
+        transition: 0.5s;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1.2em;
     }
 }
 
