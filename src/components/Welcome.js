@@ -4,6 +4,8 @@ import { Link }from 'react-router-dom';
 import man from '../img/man.png';
 import woman from '../img/woman.png';
 
+import Activity from './Activity';
+
 class Welcome extends React.Component{
     render(){
         console.log(this.props);
@@ -21,7 +23,7 @@ class Welcome extends React.Component{
                     <Link>Salir</Link>
                 </div>
                 <div className="side-container">
-                    
+                    <Activity/>
                 </div>
             </div>
         );

@@ -64,7 +64,8 @@ class Register extends React.Component{
         e.preventDefault();
         let data = this.state.user;
 
-        if(data.usrname == "" || data.email == "" || data.phone == "" || data.fullname == "" || data.password == ""){
+        if(data.usrname === "" || data.email === "" || data.phone === "" 
+            || data.fullname === "" || data.password === ""){
             return alert('No pueden haber campos vacios');
         }
         return fetch('http://ceiiapi.herokuapp.com/user', {
