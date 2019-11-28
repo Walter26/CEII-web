@@ -6,6 +6,7 @@ import woman from '../img/woman.png';
 
 class Welcome extends React.Component{
     render(){
+        console.log(this.props);
         return(
             <div className="container main">
                 <div className="welcome">
@@ -19,20 +20,23 @@ class Welcome extends React.Component{
                     <Link>Administrar miembros</Link>
                     <Link>Salir</Link>
                 </div>
+                <div className="side-container">
+                    
+                </div>
             </div>
         );
     }
     genderRendering(){
-        if(this.props.gender === 'F')
+        if(this.props.usr.gender === 'F' )
             return woman;
         else
             return man;
     }
     nameRendering(){
-        if(this.props.gender === 'F')
-            return "Bienvenida " + this.props.usrname;
+        if(this.props.usr.gender === 'F')
+            return "Bienvenida " + this.props.usr.usrname;
         else
-            return "Bienvenido " + this.propsusrname;
+            return "Bienvenido " + this.props.usr.usrname;
     }
 }
 
