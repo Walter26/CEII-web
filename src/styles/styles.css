@@ -641,6 +641,7 @@ a{
     .pair.selection .pair{
         height: 100%;
         max-width: 40%;
+        flex-flow: column nowrap;
     }
     
     .box.reg label{
