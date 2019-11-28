@@ -644,7 +644,12 @@ a{
         align-items: flex-start;
         font-size: 1.2em;
     }
-    
+    .side-bar a:hover{
+        font-weight: 700;
+        background: rgba(255,255,255,0.2);
+        height: 35%;
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -726,20 +731,20 @@ a{
     }
     
     .footer h2{
-        width: 33%;
+        width: 33.33%;
         font-weight: 400;
-        font-size: 1.1em;
+        font-size: 1em;
     }
     
     .footer .socials{
-        width: 30%;
+        width: 33.33%;
     }
     
     .footer .copy{
         font-weight: 400;
         font-size: 1em;
         align-self: flex-end;
-        width: 25%;
+        width: 33.33%;
         margin: 4px;
     }
 
@@ -776,6 +781,44 @@ a{
         justify-content: center;
         align-items: center;
         padding: 40px;
+    }
+
+    .container.main{
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    .welcome{
+        position: relative;
+        display: flex;
+        height: 20vh;
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-bottom: 10px;
+    }
+    
+    .welcome>h1{
+        font-size: 3em;
+    }
+    
+    .side-bar a{
+        width: auto;
+        height: inherit;
+        margin: 15px;
+        padding: 20px;
+        transition: 0.5s;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 1.1em;
     }
 }
 
