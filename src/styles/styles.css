@@ -552,6 +552,37 @@ a{
     background: rgba(255,255,255,0.2);
     height: 22%;
 }
+
+.side-container{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;   
+    width: 85%;
+    height: auto;
+}
+
+.side-container .table-act{
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.table-act th{
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.table-act th:hover{
+    font-weight: 700;
+    background: rgba(255,255,255,0.2);
+    height: 22%;
+}
+
+.table-act td{
+    padding: 20px;
+}
+
     
 @media only screen and (max-width: 1024px){
     
@@ -699,6 +730,15 @@ a{
         height: 35%;
         width: auto;
     }
+    
+    .side-container .table-act{
+        font-size: 0.9em;
+    }
+    
+    .table-act td{
+        padding: 25px;
+    }
+    
 }
 
 @media only screen and (max-width: 768px) {
